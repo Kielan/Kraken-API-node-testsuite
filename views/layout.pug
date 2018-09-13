@@ -1,0 +1,43 @@
+doctype html
+html.default(dir=dir)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
+    title Lemod: PRM
+
+    //- seo
+    meta(name='application-name', content='Kraken Tests')
+    meta(name='author', content='Kielan Lemons')
+    meta(name='description', content='network application')
+    meta(name='keywords', content='admin, app')
+    meta(name='robots', content='index, follow')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    //- favicon
+
+    link(rel='apple-touch-icon', sizes='57x57', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='114x114', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='72x72', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='144x144', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='60x60', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='120x120', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='76x76', href='/favicons/favicon.ico')
+    link(rel='apple-touch-icon', sizes='152x152', href='/favicons/favicon.ico')
+
+    meta(name='apple-mobile-web-app-title', content='Rubix')
+    meta(name='msapplication-TileColor', content='#E76049')
+    meta(name='msapplication-TileImage', content='favicons/favicon.ico')
+
+    //-- css
+    link(rel='stylesheet', href='/styles.css', type='text/css')
+
+    //-- d3
+    script(src='https://d3js.org/d3.v4.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCBP2rjBl6gpO1cGVed0wB-_E1JEXSJte0&libraries=places')
+
+    block header
+    body.pace-big(data-version='4.0.0')
+    script(id='preloadedData', type='application/json')!=data
+    block content
+    block scripts
+    block stylesheets

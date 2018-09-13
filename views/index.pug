@@ -1,0 +1,13 @@
+extends ./layout.pug
+
+block header
+  != app_stylesheets
+
+block content
+  div#app-root!= content
+
+block scripts
+  script(src='/js/main.js')
+  script(src='/js/app.js')
+
+block stylesheets
